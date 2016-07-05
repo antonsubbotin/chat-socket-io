@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title>Chat on Socket.io</title>
+	<meta charset=>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<script src="/socket.io/socket.io.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Simple chat on socket.io</h1>
+		<form action="">
+			<input id="n" type="text" placeholder="Your name">
+			<input id="m" type="text" placeholder="Write message here" autocomplete="off" autofocus="true">
+			<button>Send</button>
+		</form>
+		<ul id="messages">
+		</ul>
+	</div>
+</body>
+</html>
