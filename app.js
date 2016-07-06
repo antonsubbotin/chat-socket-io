@@ -18,10 +18,10 @@ io.on('connection', function(socket){
 	});
 });
 
-// http.listen(80, function(){
-// 	console.log('listening on *:80');
-// });
-
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+http.listen(app.get('port'), function(){
+	console.log('listening on *:', app.get('port'));
 });
+
+// app.listen(app.get('port'), function() {
+//   console.log('Node app is running on port', app.get('port'));
+// });
