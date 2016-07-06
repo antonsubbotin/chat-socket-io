@@ -4,7 +4,8 @@
 	box-sizing: border-box;
 }
 body { 
-	font: 13px Helvetica, Arial; 
+	/*font: 13px Helvetica, Arial; */
+	font: 1em Helvetica, Arial;
 }
 form { 
 	background: #000; 
@@ -16,12 +17,11 @@ form {
 form input { 
 	border: 0; 
 	padding: 10px; 
-	
-	
+	font-size: 1em;
 }
 #m {
 	width: 80%; 
-	margin: 0 .5%; 
+	margin: 0 1%; 
 }
 #n {
 	width: 9%; 
@@ -31,10 +31,11 @@ form button {
 	background: rgb(130, 224, 255); 
 	border: none; 
 	padding: 10px; 
+	font-size: 1em;
 }
 #messages {
 	list-style-type: none;
-	margin: 0;
+	/*margin: 0;*/
 	padding: 0 0 42px;
 }
 #messages li { 
@@ -45,4 +46,23 @@ form button {
 }
 #messages li.log {
 	font-style: italic;
+}
+
+@media (max-width: 768px) {
+	form button, #n {
+		width: 19%;
+	}
+	#m {
+		width: 60%; 
+		margin: 0 1%; 
+	}
+}
+
+@media (max-width: 400px) {
+	form button, form input {
+		font-size: 1.2em;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
 }
